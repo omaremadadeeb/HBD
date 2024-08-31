@@ -4,72 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Fatima</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #ffffff; /* Set background to white */
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-        }
-        .container {
-            position: relative;
-            background-color: #f0f0f0; /* Light background for the container */
-            padding: 20px;
-            border-radius: 10px; /* Optional: Add rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-        }
-        .message, .final-message {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .age {
-            font-size: 1em; /* Adjust font size here */
-            color: #666;
-        }
-        .puzzle {
-            margin-top: 20px;
-            font-size: 1.2em;
-            color: #444;
-        }
-        .puzzle input {
-            margin: 10px 0;
-            padding: 5px;
-            font-size: 1em;
-        }
-        .puzzle button {
-            padding: 5px 10px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-        .flowers {
-            display: none;
-            margin-top: 20px;
-            background-color: #ffffff; /* Background for the flowers section */
-            padding: 20px;
-            border: 1px solid #ddd; /* Optional: Add a border for better visibility */
-            border-radius: 10px; /* Optional: Add rounded corners */
-        }
-        .flowers img {
-            width: 200px;
-            height: auto;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
 </head>
 <body>
     <div class="container">
@@ -88,18 +23,6 @@
         </div>
     </div>
 
-    <script>
-        function checkAnswer() {
-            const answer = document.getElementById('answer').value;
-            if (answer === '22') {
-                document.getElementById('initialMessage').style.display = 'none';
-                document.querySelector('.puzzle').style.display = 'none';
-                document.getElementById('finalMessage').style.display = 'block';
-                document.getElementById('flowers').style.display = 'block';
-            } else {
-                alert('Try again!');
-            }
-        }
-    </script>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
